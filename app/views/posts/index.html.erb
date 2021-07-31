@@ -1,3 +1,11 @@
+<!--
+Option 1:
 <% @posts.each do |post| %>
   <%= render :partial => "post", locals: {:post => post} %>
 <% end %>
+
+Option 2:
+<%= render :partial => "post", :collection => @posts %>
+
+Option 3: -->
+<%= render @posts %>
